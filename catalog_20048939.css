@@ -1,0 +1,403 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    border-bottom: #cfcfcf 1px solid;
+}
+
+store-logo {
+    display: flex;
+    background-image: url('card_pictures/Giftmandu_logo.svg');
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+store-name {
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 15px;
+    cursor: pointer;
+    color: #807f7f;
+    padding-top: 6px;
+}
+
+store-logo-logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    width:35%;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    color: #807f7f;
+}
+
+nav a {
+    cursor: pointer;
+    border-bottom: 3px solid white;
+    transition: 0.4s;
+}
+
+header nav a:hover {
+    transition: 0.4s;
+    border-bottom: 3px solid #00CB5B;
+    color: #102B7B;
+}
+
+header button {
+    cursor: pointer;
+    background-color: #102B7B;
+    padding: 7px 20px 7px 20px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 20px; 
+    transition: 0.4s;
+    border: #102B7B solid 2px;
+}
+
+header button:hover {
+    border: #102B7B solid 2px;
+    background-color: rgb(255, 255, 255);
+    color: #102B7B;
+}
+
+home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 645px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+home home-desc {
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+home icons {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-around;
+}
+
+home icons * {
+    display: flex;
+    transition: 0.5s;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+home icons *:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+home icons icon-amazon {
+    background-image: url('card_pictures/amazon-logo.svg');
+}
+
+home icons icon-google {
+    background-image: url('card_pictures/google-logo.svg');
+}
+
+home icons icon-apple {
+    background-image: url('card_pictures/apple-logo.svg');
+}
+
+home icons icon-spotify {
+    background-image: url('card_pictures/spotify-logo.svg');
+}
+
+home icons icon-starbucks {
+    background-image: url('card_pictures/starbucks-logo.svg');
+}
+
+home icons icon-xbox {
+    background-image: url('card_pictures/xbox-logo.svg');
+}
+
+giftcards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+giftcards giftcard {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 620px;
+    position: relative;
+}
+
+
+discount {
+    display: flex;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #FF9C00;
+    border: #00CB5B 6px solid;
+    right: 5%;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px 100px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+discount:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+delivery {
+    display: flex;
+    position: absolute;
+    color: #807f7f;
+    width: 220px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    right: 160px;
+    bottom: 540px;
+}
+
+giftcards image {
+    display: flex;
+    width: 20%;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(1.4);
+    background-position: center;
+}
+
+giftcards giftcard giftcard-details * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+giftcards giftcard giftcard-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 80%;
+    padding: 25px;
+    background-color: #102B7B;
+    border-radius: 15px;
+}
+
+giftcards giftcard giftcard-details giftcard-name {
+    font-size: 38px;
+    font-weight: bold;
+    width: fit-content;
+    padding: 0px 0px 0px 25px;
+    color: #00CB5B;
+}
+
+giftcards property-code, property-type, property-cost, property-validity, property-nou, property-rating, property-region, property-stock {
+    display: flex;
+    align-items: center;
+}
+
+giftcards property-code, property-type, property-cost, property-validity, property-nou, property-rating, property-region, property-stock,about-card {
+    margin-left: 25px;
+    text-align: justify;
+}
+
+giftcards about-card label {
+    margin-bottom: 6px;
+}
+
+giftcards about-card description {
+    line-height: 25px;
+} 
+
+giftcards giftcard-details label {
+    display: flex;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+    border-bottom: #FF9C00 2px solid;
+    width: fit-content;
+}
+
+giftcards giftcard-details {
+    color: #ffffff;
+}
+
+note {
+    display: flex;
+    width: 500px;
+    height: 30px;
+    color: rgb(132, 132, 132);
+    position: fixed;
+    transform: rotate(-90deg);
+    bottom: 50%;
+    right: -225px;
+}
+
+store-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(33,37,41);
+    width: 100%;
+    height: 200px;
+    color: #ffffff;
+    margin-top: 60px;
+}
+
+store-background {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+store-background background-topic {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: #FF9C00 3px solid;
+    width: fit-content;
+}
+
+store-background background-description {
+    line-height: 28px;
+}
+
+store-details location, contact, email {
+    display: flex;
+    align-items: center;
+}
+
+store-details location-icon{
+    display: flex;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-image: url('card_pictures/location.svg');
+    padding-right: 5px;
+}
+
+store-details contact-icon{
+    display: flex;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-image: url('card_pictures/phone.svg');
+    padding-right: 5px;
+}
+
+store-details email-icon{
+    display: flex;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-image: url('card_pictures/email-icon.svg');
+    padding-right: 5px;
+}
+
+store-details store-background {
+    width: 40%;
+    text-align: justify;
+}
+
+/* modifies scroll bar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: #f9e6c7;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF9C00; 
+    border-radius: 20px;
+}
+
+/* images of different gift cards */
+giftcards #gc01amzn image {
+    background-image: url('card_pictures/amazon_card.jpg');
+}
+
+giftcards #gc02appl image {
+    background-image: url('card_pictures/apple_card.jpg');
+}
+
+giftcards #gc03bby image {
+    background-image: url('card_pictures/bestbuy_card.jpg');
+}
+
+giftcards #gc04eby image {
+    background-image: url('card_pictures/ebay_card.jpg');
+}
+
+giftcards #gc05ggl image {
+    background-image: url('card_pictures/google_card.png');
+}
+
+giftcards #gc06hnm image {
+    background-image: url('card_pictures/hm_card.jpg');
+}
+
+giftcards #gc07mcdnls image {
+    background-image: url('card_pictures/mcdonalds_card.png');
+    border-radius: 30px;
+}
+
+giftcards #gc08nik image {
+    background-image: url('card_pictures/nike_card.jpg');
+}
+
+giftcards #gc09pstn image {
+    background-image: url('card_pictures/ps_card.jpg');
+}
+
+giftcards #gc10spfy image {
+    background-image: url('card_pictures/spotify_card.jpg');
+}
+
+giftcards #gc11sbcks image {
+    background-image: url('card_pictures/starbucks_card.jpeg');
+}
+
+giftcards #gc12stm image {
+    background-image: url('card_pictures/steam_card.png');
+}
+
+giftcards #gc13ubr image {
+    background-image: url('card_pictures/uber_card.jpg');
+}
+
+giftcards #gc14xbx image {
+    background-image: url('card_pictures/xbox_card.jpg');
+}
+

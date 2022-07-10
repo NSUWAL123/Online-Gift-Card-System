@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet href="catalog_20048939.css" type="text/css"?>
+
+<store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_20048939.xsd">
+
+    <!-- header section includes navigation bar -->
+    <header>
+        <store-logo-logo>
+            <store-logo/>
+            <store-name>GiftMandu</store-name>
+        </store-logo-logo>
+        <nav>
+            <a href='#'>Home</a>
+            <a href='#'>Services</a>
+            <a href='#'>About</a>
+            <a href='#'>Contact</a>
+        </nav>
+        <button>Login</button>
+    </header>
+    <!-- header setion ends -->
+
+    <!-- home section includes landing page -->
+    <home>
+        <home-desc>Buy, Send &amp; Redeem Gift Cards Today!!!</home-desc>
+        <icons><icon-amazon/><icon-google/><icon-apple/><icon-spotify/><icon-starbucks/><icon-xbox/></icons>    
+    </home>
+    <!-- end of home section -->
+
+    <!-- gifcards section includes all-together 14 giftcards with its details -->
+    <giftcards>
+        <giftcard id="gc01amzn" company="Amazon" type="Online"> <!-- data type of the giftcard is set to ID, so id of the giftcard cannot repeat  -->
+            <image/><!-- displays image of the gift card -->
+            <giftcard-details>
+                <giftcard-name>Amazon eGift Card</giftcard-name>
+                <property-code>
+                    <label>Card Code:</label>
+                    <code-number>gc01amzn</code-number>
+                </property-code>
+                <property-type>
+                    <label>Type:</label>
+                    <type>Online</type>
+                </property-type>
+                <property-cost>
+                    <label>Price: </label>
+                    <cost currency="British Pound">38.48</cost><!-- default currency is set to British Pound -->
+                </property-cost>
+                <property-validity>
+                    <label>Validity:</label>
+                    <validity>2023-09-10</validity>
+                </property-validity>
+                <property-nou>
+                    <label>Users:</label>
+                    <number-of-users>1198</number-of-users>
+                </property-nou>
+                <property-rating>
+                    <label>Rating:</label>
+                    <rating>4.8</rating>
+                </property-rating>
+                <property-region>
+                    <label>Available-in:</label>
+                    <region>UK Only</region>
+                </property-region>
+                <property-stock>
+                    <label>Stock:</label>
+                    <stock stock-left="10">In stock</stock>
+                </property-stock>
+                <about-card>
+                    <label>Description:</label>
+                    <description is_returnable="no">
+                    <![CDATA[This Gift Card can be used to buy millions of qualifying items and services from Amazon.com Services LLC and its affiliates on www.amazon.com or one of its connected sites, such as smile.amazon.com.]]></description>
+                </about-card>
+            </giftcard-details>
+            <delivery>Free Delivery</delivery><!-- delivery element is optional, so it can be set on some selected gift cards -->
+            <discount><!-- discount element is optional, so it can be set on some selected cards ie. discount is not compulsary for all gift cards -->
+                <discount-percentage>10</discount-percentage>
+                <label>% OFF</label>
+            </discount>
+        </giftcard>
+
+        <giftcard id="gc02appl"  company="Apple" type="Online, Physical"> 
+            <image/>
+            <giftcard-details>
+                <giftcard-name>Apple Gift Card</giftcard-name>
+                <property-code>
+                    <label>Card Code:</label>
+                    <code-number>gc02appl</code-number>
+                </property-code>
+                <property-type>
+                    <label>Type:</label>
+                    <type>Online, Physical</type>
+                </property-type>
+                <property-cost>
+                    <label>Price: </label>
+                    <cost currency="British Pound">76.96</cost>
+                </property-cost>
+                <property-validity>
+                    <label>Validity:</label>
+                    <validity>2024-12-01</validity>
+                </property-validity>
+                <property-nou>
+                    <label>Users:</label>
+                    <number-of-users>23980</number-of-users>
+                </property-nou>
+                <property-rating>
+                    <label>Rating:</label>
+                    <rating>4.7</rating>
+                </property-rating>
+                <property-region>
+                    <label>Available-in:</label>
+                    <region>All Countries</region>
+                </property-region>
+                <property-stock>
+                    <label>Stock:</label>
+                    <stock stock-left="12">In stock</stock>
+                </property-stock>
+                <about-card>
+                    <label>Description:</label>
+                    <description is_returnable="no"><![CDATA[Purchase items and accessories with your Apple Gift Card at an Apple Store. You may also use it on the App Store to buy apps, subscriptions like Apple Music or iCloud+, and purchases from apple.com.]]></description>
+                </about-card>
+            </giftcard-details>
+            <delivery>Free Delivery</delivery>
+        </giftcard>
+
+        <giftcard id="gc03bby" company="Best Buy" type="Physical"> 
+            <image/>
+            <giftcard-details>
+                <giftcard-name>Best Buy Gift Card</giftcard-name>
+                <property-code>
+                    <label>Card Code:</label>
+                    <code-number>gc03bby</code-number>
+                </property-code>
+                <property-type>
+                    <label>Type:</label>
+                    <type>Physical</type>
+                </property-type>
+                <property-cost>
+                    <label>Price: </label>
+                    <cost currency="British Pound">384.82</cost>
+                </property-cost>
+                <property-nou>
+                    <label>Users:</label>
+                    <number-of-users>12991</number-of-users>
+                </property-nou>
+                <property-rating>
+                    <label>Rating:</label>
+                    <rating>3.8</rating>
+                </property-rating>
+                <property-region>
+                    <label>Available-in:</label>
+                    <region>UK Only</region>
+                </property-region>
+                <property-stock>
+                    <label>Stock:</label>
+                    <stock stock-left="15">In stock</stock>
+                </property-stock>
+                <about-card>
+                    <label>Description:</label>
+                    <description is_returnable="no"><![CDATA[Gift cards from Best Buy can only be used to buy items and services in shops, as stated in the terms and restrictions.]]></description>
+                </about-card>
+            </giftcard-details>
+            <discount>
+                <discount-percentage>5</discount-percentage>
+                <label>% OFF</label>
+            </discount>
+        </giftcard>
+
+        <giftcard id="gc04eby" company="eBay" type="Online"> 
+            <image/>
+            <giftcard-details>
+                <giftcard-name>eBay eGift Card</giftcard-name>
+                <property-code>
+                    <label>Card Code:</label>
+                    <code-number>gc04eby</code-number>
+                </property-code>
+                <property-type>
+                    <label>Type:</label>
+                    <type>Online</type>
+                </property-type>
+                <property-cost>
+                    <label>Price: </label>
+                    <cost currency="British Pound">153.93</cost>
+                </property-cost>
+                <property-validity>
+                    <label>Validity:</label>
+                    <validity>2023-06-06</validity>
+                </property-validity>
+                <property-nou>
+                    <label>Users:</label>
+                    <number-of-users>34045</number-of-users>
+                </property-nou>
+                <property-rating>
+                    <label>Rating:</label>
+                    <rating>4.1</rating>
+                </property-rating>
+                <property-region>
+                    <label>Available-in:</label>
+                    <region>All Countries</region>
+                </property-region>
+                <property-stock>
+                    <label>Stock:</label>
+                    <stock stock-left="9">In stock</stock>
+                </property-stock>
+                <about-card>
+                    <label>Description:</label>
+                    <description is_returnable="no"><![CDATA[eBay Gift Cards are the Perfect Gift, Every Time.  Use the eBay Gift Card to shop from millions of items in Electronics, Toys, Motors, Fashion, Home & Garden, Art, Collectibles, Sporting Goods and everything in-between.]]></description>
+                </about-card>
+            </giftcard-details>
+            <discount>
+                <discount-percentage>20</discount-percentage>
+                <label>% OFF</label>
+            </discount>
+        </giftcard>
+
+        <giftcard id="gc05ggl" company="Google" type="Online"> 
+            <image/>
+            <giftcard-details>
+                <giftcard-name>Google Play Gift Card</giftcard-name>
+                <property-code>
+                    <label>Card Code:</label>
+                    <code-number>gc05ggl</code-number>
+                </property-code>
+                <property-type>
+                    <label>Type:</label>
+                    <type>Online</type>
+                </property-type>
+                <property-cost>
+                    <label>Price: </label>
+                    <cost currency="British Pound">769.64</cost>
+                </property-cost>
+                <property-validity>
+                    <label>Validity:</label>
+                    <validity>2025-01-30</validity>
+                </property-validity>
+                <property-nou>
+                    <label>Users:</label>
+                    <number-of-users>95088</number-of-users>
+                </property-nou>
+                <property-rating>
+                    <label>Rating:</label>
+                    <rating>4.9</rating>
+                </property-rating>
+                <property-region>
+                    <label>Available-in:</label>
+                    <region>All Countries</region>
+                </property-region>
+                <property-stock>
+                    <label>Stock:</label>
+                    <stock stock-left="8">In stock</stock>
+                </property-stock>
+                <about-card>
+                    <label>Description:</label>
+                    <description is_returnable="no"><![CDATA[A Google Play Gift Card is a digital gift card that has a monetary value pre-loaded on it. This eGift card may be used to buy Google Play items and redeem games at www.googleplay.com.]]></description>
+                </about-card>
+            </giftcard-details>
+        </giftcard>
+
+        <giftcard id="gc06hnm" company="HnM" type="Online, Physical"> 
+            <image/>
+            <giftcard-details>
+                <giftcard-name>H&amp;M Gift Card</giftcard-name>
+                <property-code>
+                    <label>Card Code:</label>
+                    <code-number>gc06hnm</code-number>
+                </property-code>
+                <property-type>
+                    <label>Type:</label>
+                    <type>Online, Physical</type>
+                </property-type>
+                <property-cost>
+                    <label>Price: </label>
+                    <cost currency="British Pound">19.24</cost>
+                </property-cost>
+                <property-nou>
+                    <label>Users:</label>
+                    <number-of-users>1134</number-of-users>
+                </property-nou>
+                <property-region>
+                    <label>Available-in:</label>
+                    <region>UK Only</region>
+                </property-region>
+                <property-stock>
+                    <label>Stock:</label>
+                    <stock stock-left="55">In stock</stock>
+                </property-stock>
+                <about-card>
+                    <label>Description:</label>
+                    <description is_returnable="no"><![CDATA[This H&M Gift Card may be used to purchase products or services exclusively at H&M in the UK, as well as at hm.com in the UK.]]></description>
+                </about-card>
+            </giftcard-details>
+            <delivery>Free Delivery</delivery>
+        </giftcard>
+
+        <giftcard id="gc07mcdnls" company="McDonalds" type="Physical"> 
+            <image/>
+            <giftcard-details>
+                <giftcard-name>McDonald's Gift Voucher</giftcard-name>
+                <property-code>
+                    <label>Card Code:</label>
+                    <code-number>gc07mcdnls</code-number>
+                </property-code>
+                <property-type>
+                    <label>Type:</label>
+                    <type>Physical</type>
+                </property-type>
+                <property-cost>
+                    <label>Price: </label>
+                    <cost currency="British Pound">19.24</cost>
+                </property-cost>
+                <property-validity>
+                    <label>Validity:</label>
+                    <validity>2022-05-30</validity>
+                </property-validity>
+                <property-nou>
+                    <label>Users:</label>
+                    <number-of-users>22000</number-of-users>
+                </property-nou>
+                <property-rating>
+                    <label>Rating:</label>
+                    <rating>3.5</rating>
+                </property-rating>
+                <property-region>
+                    <label>Available-in:</label>
+                    <region>All Countries</region>
+                </property-region>
+                <property-stock>
+                    <label>Stock:</label>
+                    <stock stock-left="34">In stock</stock>
+                </property-stock>
+                <about-card>
+                    <label>Description:</label>
+                    <description is_returnable="no"><![CDATA[McDonald's gift cards make paying for your meal simple. A McDonald's gift card, also known as the Arch Card, can be used for all purchases at participating McDonald's restaurants instead of carrying cash.]]></description>
+                </about-card>
+            </giftcard-details>
+        </giftcard>
+
+        <giftcard id="gc08nik" company="Nike" type="Online, Physical"> 
+            <image/>
+            <giftcard-details>
+                <giftcard-name>Nike Gift Card</giftcard-name>
+                <property-code>
+                    <label>Card Code:</label>
+                    <code-number>gc08nik</code-number>
+                </property-code>
+                <property-type>
+                    <label>Type:</label>
+                    <type>Online, Physical</type>
+                </property-type>
+                <property-cost>
+                    <label>Price: </label>
+                    <cost currency="British Pound">38.48</cost>
+                </property-cost>
+                <property-nou>
+                    <label>Users:</label>
+                    <number-of-users>2390</number-of-users>
+                </property-nou>
+                <property-rating>
+                    <label>Rating:</label>
+                    <rating>4.1</rating>
+                </property-rating>
+                <property-region>
+                    <label>Available-in:</label>
+                    <region>All Countries</region>
+                </property-region>
+                <property-stock>
+                    <label>Stock:</label>
+                    <stock stock-left="32">In stock</stock>
+                </property-stock>
+                <about-card>
+                    <label>Description:</label>
+                    <description is_returnable="no"><![CDATA[This gift card grants access to a vast selection of footwear, clothes, and equipment. Gift Cards are usable in all countries at Nike.com, Converse.com, and select Nike and Converse-owned retail locations.]]></description>
+                </about-card>
+            </giftcard-details>
+        </giftcard>
+
+        <giftcard id="gc09pstn" company="PlayStation" type="Online, Physical"> 
+            <image/>
+            <giftcard-details>
+                <giftcard-name>PlayStation Gift Card</giftcard-name>
+                <property-code>
+                    <label>Card Code:</label>
+                    <code-number>gc09pstn</code-number>
+                </property-code>
+                <property-type>
+                    <label>Type:</label>
+                    <type>Online, Physical</type>
+                </property-type>
+                <property-cost>
+                    <label>Price: </label>
+                    <cost currency="British Pound">76.96</cost>
+                </property-cost>
+                <property-validity>
+                    <label>Validity:</label>
+                    <validity>2023-01-10</validity>
+                </property-validity>
+                <property-nou>
+                    <label>Users:</label>
+                    <number-of-users>8093</number-of-users>
+                </property-nou>
+                <property-rating>
+                    <label>Rating:</label>
+                    <rating>4</rating>
+                </property-rating>
+                <property-region>
+                    <label>Available-in:</label>
+                    <region>All Countries</region>
+                </property-region>
+                <property-stock>
+                    <label>Stock:</label>
+                    <stock stock-left="27">In stock</stock>
+                </property-stock>
+                <about-card>
+                    <label>Description:</label>
+                    <description is_returnable="no"><![CDATA[It can be used to buy anything on the PlayStation Store. Thousands of games, add-ons, memberships, and other options are available. Purchases can be downloaded remotely. Purchases may be added to your download queue from anywhere on the internet, allowing you to begin playing sooner.]]></description>
+                </about-card>
+            </giftcard-details>
+        </giftcard>
+
+        <giftcard id="gc10spfy" company="Spotify" type="Online"> 
+            <image/>
+            <giftcard-details>
+                <giftcard-name>Spotify Gift Card</giftcard-name>
+                <property-code>
+                    <label>Card Code:</label>
+                    <code-number>gc10spfy</code-number>
+                </property-code>
+                <property-type>
+                    <label>Type:</label>
+                    <type>Online</type>
+                </property-type>
+                <property-cost>
+                    <label>Price: </label>
+                    <cost currency="British Pound">46.18</cost>
+                </property-cost>
+                <property-validity>
+                    <label>Validity:</label>
+                    <validity>2023-05-19 </validity>
+                </property-validity>
+                <property-nou>
+                    <label>Users:</label>
+                    <number-of-users>33012</number-of-users>
+                </property-nou>
+                <property-region>
+                    <label>Available-in:</label>
+                    <region>All Countries</region>
+                </property-region>
+                <property-stock>
+                    <label>Stock:</label>
+                    <stock stock-left="78">In stock</stock>
+                </property-stock>
+                <about-card>
+                    <label>Description:</label>
+                    <description is_returnable="no"><![CDATA[With a Spotify eGift Card, you can give someone Premium access to Spotify. Enjoy ad-free, high-quality music without interruptions. Listen to your music offline on any device with unlimited skips.]]></description>
+                </about-card>
+            </giftcard-details>
+            <discount>
+                <discount-percentage>25</discount-percentage>
+                <label>% OFF</label>
+            </discount>
+        </giftcard>
+
+        <giftcard id="gc11sbcks" company="Starbucks" type="Physical"> 
+            <image/>
+            <giftcard-details>
+                <giftcard-name>Starbucks In-Store Gift Card</giftcard-name>
+                <property-code>
+                    <label>Card Code:</label>
+                    <code-number>gc11sbcks</code-number>
+                </property-code>
+                <property-type>
+                    <label>Type:</label>
+                    <type>Physical</type>
+                </property-type>
+                <property-cost>
+                    <label>Price: </label>
+                    <cost currency="British Pound">11.54</cost>
+                </property-cost>
+                <property-validity>
+                    <label>Validity:</label>
+                    <validity>2022-05-30</validity>
+                </property-validity>
+                <property-nou>
+                    <label>Users:</label>
+                    <number-of-users>43201</number-of-users>
+                </property-nou>
+                <property-rating>
+                    <label>Rating:</label>
+                    <rating>4.3</rating>
+                </property-rating>
+                <property-region>
+                    <label>Available-in:</label>
+                    <region>All Countries</region>
+                </property-region>
+                <property-stock>
+                    <label>Stock:</label>
+                    <stock stock-left="4">In stock</stock>
+                </property-stock>
+                <about-card>
+                    <label>Description:</label>
+                    <description is_returnable="no"><![CDATA[The easiest way to make someone feel special is to give them a Starbucks Gift Card. The ideal gift for birthdays, thank you notes, or any other occasion. Everyone enjoys receiving Starbucks. They may be used to buy food and drinks in-store right away.]]></description>
+                </about-card>
+            </giftcard-details>
+            <delivery>Free Delivery</delivery>
+        </giftcard>
+
+        <giftcard id="gc12stm" company="Steam" type="Online"> 
+            <image/> 
+            <giftcard-details>
+                <giftcard-name>Steam Gift Card</giftcard-name>
+                <property-code>
+                    <label>Card Code:</label>
+                    <code-number>gc12stm</code-number>
+                </property-code>
+                <property-type>
+                    <label>Type:</label>
+                    <type>Online</type>
+                </property-type>
+                <property-cost>
+                    <label>Price: </label>
+                    <cost currency="British Pound">23.09</cost>
+                </property-cost>
+                <property-validity>
+                    <label>Validity:</label>
+                    <validity>2022-09-12</validity>
+                </property-validity>
+                <property-nou>
+                    <label>Users:</label>
+                    <number-of-users>110378</number-of-users>
+                </property-nou>
+                <property-rating>
+                    <label>Rating:</label>
+                    <rating>5</rating>
+                </property-rating>
+                <property-region>
+                    <label>Available-in:</label>
+                    <region>All Countries</region>
+                </property-region>
+                <property-stock>
+                    <label>Stock:</label>
+                    <stock stock-left="29">In stock</stock>
+                </property-stock>
+                <about-card>
+                    <label>Description:</label>
+                    <description is_returnable="no"><![CDATA[A Steam card is a gift card that can be used to get credit on Steam. Steam cards provide credit that may be used to purchase games, downloadable content, and in-game stuff.]]></description>
+                </about-card>
+            </giftcard-details>
+        </giftcard>
+
+        <giftcard id="gc13ubr" company="Uber Eats" type="Online"> 
+            <image/>
+            <giftcard-details>
+                <giftcard-name>Uber Eats Gift Card</giftcard-name>
+                <property-code>
+                    <label>Card Code:</label>
+                    <code-number>gc13ubr</code-number>
+                </property-code>
+                <property-type>
+                    <label>Type:</label>
+                    <type>Online</type>
+                </property-type>
+                <property-cost>
+                    <label>Price: </label>
+                    <cost currency="British Pound">38.48</cost>
+                </property-cost>
+                <property-validity>
+                    <label>Validity:</label>
+                    <validity>2022-08-18</validity>
+                </property-validity>
+                <property-nou>
+                    <label>Users:</label>
+                    <number-of-users>1355</number-of-users>
+                </property-nou>
+                <property-rating>
+                    <label>Rating:</label>
+                    <rating>4.7</rating>
+                </property-rating>
+                <property-region>
+                    <label>Available-in:</label>
+                    <region>UK Only</region>
+                </property-region>
+                <property-stock>
+                    <label>Stock:</label>
+                    <stock stock-left="0">Out of stock</stock>
+                </property-stock>
+                <about-card>
+                    <label>Description:</label>
+                    <description is_returnable="no"><![CDATA[Uber Eats gift cards are a terrific culinary present for friends and family members, since they may order a snack for themselves or prepare a whole feast for your next get-together.]]></description>
+                </about-card>
+            </giftcard-details>
+            <discount>
+                <discount-percentage>40</discount-percentage>
+                <label>% OFF</label>
+            </discount>
+        </giftcard>
+
+        <giftcard id="gc14xbx" company="Xbox" type="Online, Physical"> 
+            <image/>
+            <giftcard-details>
+                <giftcard-name>Xbox Gift Card</giftcard-name>
+                <property-code>
+                    <label>Card Code:</label>
+                    <code-number>gc14xbx</code-number>
+                </property-code>
+                <property-type>
+                    <label>Type:</label>
+                    <type>Online, Physical</type>
+                </property-type>
+                <property-cost>
+                    <label>Price: </label>
+                    <cost currency="British Pound">19.24</cost>
+                </property-cost>
+                <property-validity>
+                    <label>Validity:</label>
+                    <validity>2022-12-01</validity>
+                </property-validity>
+                <property-nou>
+                    <label>Users:</label>
+                    <number-of-users>45666</number-of-users>
+                </property-nou>
+                <property-rating>
+                    <label>Rating:</label>
+                    <rating>4.9</rating>
+                </property-rating>
+                <property-region>
+                    <label>Available-in:</label>
+                    <region>All Countries</region>
+                </property-region>
+                <property-stock>
+                    <label>Stock:</label>
+                    <stock stock-left="89">In Stock</stock>
+                </property-stock>
+                <about-card>
+                    <label>Description:</label>
+                    <description is_returnable="no"><![CDATA[Get an Xbox gift card to use on Xbox and Windows for games and entertainment. Purchase the most up-to-date games, map packs, movies, TV shows, music, applications, and more*.]]></description>
+                </about-card>
+            </giftcard-details>
+            <delivery>Free Delivery</delivery>
+            <discount>
+                <discount-percentage>35</discount-percentage>
+                <label>% OFF</label>
+            </discount>
+        </giftcard>
+    </giftcards>
+    <!-- giftcards section ends -->
+ 
+    <note>* All the prices have been converted to British Pounds.</note>
+
+    <!-- store-details section stores information related to the store -->
+    <store-details RegNo="10104" estd="2014" total-customers="45986"><!-- RegNo and estd is set to 10104 and 2014 which is fixed, so changing value generates error -->
+        <store-background>
+            <background-topic>About Store</background-topic> 
+            <background-description>GiftMandu is the leading and trusted gift card store in the UK with 100+ online and offline gift card products. Established in 2014, GiftMandu has served more than 45000 satisfied customers.</background-description>
+        </store-background>
+        <location postal-code="E1 7AX"><location-icon/>London, United Kingdom</location>
+        <contact><contact-icon/><contact-details>020-9808905321</contact-details></contact>
+        <email><email-icon/><email-address>contact.giftmandu@gmail.com</email-address></email>            
+    </store-details>
+    <!-- store-details section ends -->
+</store>
+
+<employee>
+    <firstname>Apson</firstname>
+    <lastname>Sapkota</lastname>
+</employee>
+
+<student sex="male">
+    <fullname>nishit</fullname>
+    <course>computing</course>
+    <whichlevel>2</whichlevel>
+    <age>18</age>
+</student>
+
+<studentInformation>
+    <student>
+        <name></name>
+        <course></course>
+        <age></age>
+    </student>
+    <email></email>
+    <nationality></nationality>
+    <telephoneNumber></telephoneNumber>
+</studentInformation>

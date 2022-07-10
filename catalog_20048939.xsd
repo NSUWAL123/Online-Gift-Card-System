@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- root element starts-->
+  <xs:element name="store">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="header"/>
+        <xs:element ref="home"/>
+        <xs:element ref="giftcards"/>
+        <xs:element ref="note"/>
+        <xs:element ref="store-details">
+          <xs:annotation>
+            <xs:documentation>&lt;website-url>&lt;url-icon/>www.giftmandu.com.uk&lt;/website-url></xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- root element ends -->
+
+
+  <!-- header starts -->
+  <xs:element name="header">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="store-logo-logo"/>
+        <xs:element ref="nav"/>
+        <xs:element ref="button"/>
+      </xs:sequence>
+    </xs:complexType> 
+  </xs:element>
+  
+  <xs:element name="store-logo-logo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="store-logo"/>
+        <xs:element ref="store-name"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="store-logo" type="xs:string"/>
+  <xs:element name="store-name" type="xs:string"/>
+
+  <xs:element name="nav">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="a" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="button" type="xs:string"/>
+
+  <xs:element name="a">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute ref="href" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:attribute name="href" type="xs:string"></xs:attribute>
+  <!-- header ends -->
+
+
+  <!-- home starts -->
+  <xs:element name="home">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="home-desc">
+          <xs:annotation>
+            <xs:documentation><![CDATA[<icons><icon-ebay/><icon-mcdonalds/><icon-hm/><icon-nike/><icon-ps/><icon-steam/></icons>]]></xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element ref="icons"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="home-desc" type="xs:string"/>
+  <xs:element name="icons"><!-- icons element only holds logo on different brands -->
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="icon-amazon"/>
+        <xs:element name="icon-google"/>
+        <xs:element name="icon-apple"/>
+        <xs:element name="icon-spotify"/>
+        <xs:element name="icon-starbucks"/>
+        <xs:element name="icon-xbox"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- home ends -->
+
+
+  <!-- giftcards starts -->
+  <xs:element name="giftcards">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="giftcard" minOccurs="0" maxOccurs="unbounded"/><!-- giftcard element is optional -->
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- The following element is optional -->
+  <xs:element name="giftcard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="image"/>
+        <xs:element ref="giftcard-details" maxOccurs="1"/>
+        <xs:element ref="delivery" minOccurs="0" maxOccurs="1"/><!-- delivery element is optional -->
+        <xs:element ref="discount" minOccurs="0" maxOccurs="1"/><!-- discount element is optional -->
+      </xs:sequence>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="company" use="required"/>
+      <xs:attribute ref="type" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:attribute name="id" type="xs:ID"/>
+  <xs:attribute name="company" type="xs:string"/>
+  <xs:attribute name="type">
+    <xs:simpleType>
+      <!-- enumeration restriction is set to the type attribute, so the type of giftcard can only be the following three values -->
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Physical"/>
+        <xs:enumeration value="Online"/>
+        <xs:enumeration value="Online, Physical"/>
+      </xs:restriction>
+    </xs:simpleType> 
+  </xs:attribute>
+
+  <xs:element name="image"/>
+
+  <!-- The following element is optional -->
+  <xs:element name="discount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="discount-percentage"/>
+        <xs:element ref="label"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- The following element is optional -->
+  <xs:element name="delivery">
+    
+  </xs:element>
+
+  <xs:element name="discount-percentage" type="xs:integer"/>
+
+  <xs:element name="giftcard-details">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="giftcard-name"/>
+        <xs:element ref="property-code"/>
+        <xs:element ref="property-type"/>
+        <xs:element ref="property-cost"/>
+        <xs:element ref="property-validity" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="property-nou"/>
+        <xs:element ref="property-rating" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="property-region"/>
+        <xs:element ref="property-stock"/>
+        <xs:element ref="about-card"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="giftcard-name" type="xs:string"/>
+  
+  <xs:element name="property-code">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="label"/>
+        <xs:element ref="code-number"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="property-type">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="label"/>
+        <xs:element ref="type"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="property-cost">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="label"/>
+        <xs:element ref="cost"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="property-validity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="label"/>
+        <xs:element ref="validity"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="property-nou">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="label"/>
+        <xs:element ref="number-of-users"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="property-rating">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="label"/>
+        <xs:element ref="rating"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="property-region">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="label"/>
+        <xs:element ref="region"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="property-stock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="label"/>
+        <xs:element ref="stock"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="label" type="xs:string"/>
+  <xs:element name="code-number" type="xs:string"/>
+
+  <xs:element name="type">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <!-- enumeration restriction is set to the type element, so the type of giftcard can only be the following three values -->
+        <xs:enumeration value="Physical"/>  
+        <xs:enumeration value="Online"/>  
+        <xs:enumeration value="Online, Physical"/>  
+      </xs:restriction>
+    </xs:simpleType> 
+  </xs:element>
+
+  <xs:element name="cost">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:float">
+          <xs:attribute ref="currency" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="currency" type="xs:string" default="British Pound"/>
+  <xs:element name="validity" type="xs:date"/>
+  <xs:element name="number-of-users" type="xs:int"/>
+  <xs:element name="rating" type="xs:float"/>
+  <xs:element name="region">
+    <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <!-- enumeration restriction is set to the region element, so the region of the giftcard can only the following two values -->
+            <xs:enumeration value="All Countries"/>
+            <xs:enumeration value="UK Only"/>
+          </xs:restriction>
+        </xs:simpleType> 
+  </xs:element>
+
+  <xs:element name="stock">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute ref="stock-left" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:attribute name="stock-left" type="xs:integer"/>
+
+  <xs:element name="about-card">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="label"/>
+        <xs:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="description">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute ref="is_returnable" use="optional" default="no"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:attribute name="is_returnable">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <!-- enumeration restriction is set to the is_returnable attribute, so the type of giftcard can only be the following two values -->
+        <xs:enumeration value="no"/>
+        <xs:enumeration value="yes"/>
+      </xs:restriction>
+    </xs:simpleType> 
+  </xs:attribute>
+  <!-- giftcards ends -->
+
+  
+  <!-- store-detail starts -->
+  <xs:element name="store-details">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="store-background"/>
+        <xs:element ref="location"/>
+        <xs:element ref="contact"/>
+        <xs:element ref="email"/>
+      </xs:sequence>
+      <xs:attribute ref="RegNo" use="required" fixed="10104"/><!-- Since this attribute is fixed, the attribute in XML document should be 10104 -->
+      <xs:attribute ref="estd" use="required" fixed="2014"/><!-- Since this attribute is fixed, the attribute in XML document should be 2014 -->
+      <xs:attribute ref="total-customers" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:attribute name="RegNo" type="xs:short"/>
+  <xs:attribute name="estd" type="xs:short"/>
+  <xs:attribute name="total-customers" type="xs:integer"/>
+
+  <xs:element name="store-background">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="background-topic"/>
+        <xs:element ref="background-description"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="location">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="location-icon"/>
+      </xs:sequence>
+      <xs:attribute ref="postal-code" use="optional" default="E1 7AX"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:attribute name="postal-code" type="xs:string"/>
+
+  <xs:element name="contact">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="contact-icon"/>
+        <xs:element ref="contact-details"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="email">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="email-icon"/>
+        <xs:element ref="email-address"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="contact-details">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+          <xs:pattern value="[0-9]{3}-[0-9]{10}"/><!-- pattern restriction set to contact in which first 3 digit should be area code then a hyphen followed by a 10 digit number -->
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="email-address">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+          <xs:maxLength value="254"/>
+          <xs:pattern value="[_\-a-zA-Z0-9\.\+]+@[a-zA-Z0-9](\.?[\-a-zA-Z0-9]*[a-zA-Z0-9])*"/><!-- regex pattern to impose email pattern restriction -->
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="background-topic" type="xs:string"/>
+  <xs:element name="background-description" type="xs:string"/>
+  <xs:element name="contact-icon"/>
+  <xs:element name="location-icon"/>
+  <xs:element name="email-icon"/>
+  <!-- store-detail ends -->
+  
+  <xs:element name="note" type="xs:string"/>
+</xs:schema>
